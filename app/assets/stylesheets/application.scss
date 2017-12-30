@@ -1,0 +1,25 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+hr {
+  margin-top: 0px;
+}
+
+.jumbotron {
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+#logo {
+  font-size: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  padding: 15px 0px;
+  margin-right: 15px;
+}
