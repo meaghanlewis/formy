@@ -11,8 +11,8 @@ Rails.application.routes.draw do
   get 'filedownload', to: 'pages#filedownload'
   get 'keypress', to: 'pages#keypress'
   get 'modal', to: 'pages#modal'
-  get 'mousepress', to: 'pages#mousepress'
   get 'radiobutton', to: 'pages#radiobutton'
   get 'scroll', to: 'pages#scroll'
+  get 'switchwindow', to: 'pages#switchwindow'
   get 'form', to: 'pages#form'
 end
