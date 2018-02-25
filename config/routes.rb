@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   get 'modal', to: 'pages#modal'
   get 'radiobutton', to: 'pages#radiobutton'
   get 'scroll', to: 'pages#scroll'
-  get 'switchwindow', to: 'pages#switchwindow'
+  get 'switch-window', to: 'pages#switchwindow'
   get 'form', to: 'pages#form'
 end
