@@ -38,7 +38,7 @@ gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
-gem "paperclip", "~> 4.1"
+gem "paperclip", "~> 5.2.0"
 
 gem 'bootstrap-datepicker-rails'
 
