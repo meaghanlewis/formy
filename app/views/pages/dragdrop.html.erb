@@ -31,9 +31,12 @@ function drop(ev) {
 </head>
 <body>
 
+<div class="form-group row">
   <div id="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-  <br>
+</div>
+<div class="form-group row">
   <%= image_tag("selenium-logo.png", id: "image", draggable: true, ondragstart: "drag(event)") %>
+</div>
   </body>
 </form>
 </html>
