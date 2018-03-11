@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "bootstrap-datepicker3";
 
 hr {
   margin-top: 0px;
@@ -22,4 +23,8 @@ hr {
 .navbar-brand {
   padding: 15px 0px;
   margin-right: 15px;
+}
+
+th.datepicker-switch {
+  text-align: center;
 }
