@@ -1,1 +1,25 @@
-<h1>Dropdown</h1>
+<br />
+<h1 align="center">Dropdown</h1>
+<br />
+<div class="dropdown" align="center">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <%= link_to "Autocomplete", autocomplete_path, class: "dropdown-item" %>
+    <%= link_to "Buttons", buttons_path, class: "dropdown-item" %>
+    <%= link_to "Checkbox", checkbox_path, class: "dropdown-item" %>
+    <%= link_to "Datepicker", datepicker_path, class: "dropdown-item" %>
+    <%= link_to "Drag and Drop", dragdrop_path, class: "dropdown-item" %>
+    <%= link_to "Dropdown", dropdown_path, class: "dropdown-item" %>
+    <%= link_to "Enabled and disabled elements", enabled_path, class: "dropdown-item" %>
+    <%= link_to "File Upload", fileupload_path, class: "dropdown-item" %>
+    <%= link_to "File Download", filedownload_path, class: "dropdown-item" %>
+    <%= link_to "Key and Mouse Press", keypress_path, class: "dropdown-item" %>
+    <%= link_to "Modal", modal_path, class: "dropdown-item" %>
+    <%= link_to "Page Scroll", scroll_path, class: "dropdown-item" %>
+    <%= link_to "Radio Button", radiobutton_path, class: "dropdown-item" %>
+    <%= link_to "Switch Window", switch_window_path, class: "dropdown-item" %>
+    <%= link_to "Complete Web Form", form_path, class: "dropdown-item" %>
+  </div>
+</div>
