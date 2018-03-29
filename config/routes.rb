@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   get 'scroll', to: 'pages#scroll'
   get 'switch-window', to: 'pages#switchwindow'
   get 'form', to: 'pages#form'
+  get 'thanks', to: 'pages#thanks'
 end

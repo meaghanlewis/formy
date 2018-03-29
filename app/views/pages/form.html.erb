@@ -1,1 +1,104 @@
 <h1> This the form</h1>
+
+
+<form>
+  <div class="form-group">
+
+    <!-- TEXT FIELDS -->
+    <div class="col-sm-8 col-sm-offset-2">
+      <label for="first-name">First name</label>
+      <input type="text" class="form-control" id="first-name" placeholder="Enter first name">
+    </div>
+
+    <div class="col-sm-8 col-sm-offset-2">
+      <label for="last-name">Last name</label>
+      <input type="text" class="form-control" id="last-name" placeholder="Enter last name">
+    </div>
+
+    <div class="col-sm-8 col-sm-offset-2">
+      <label for="ssn">SSN</label>
+      <input type="text" class="form-control" id="ssn" placeholder="Enter social security number">
+    </div>
+
+    <!-- RADIO BUTTONS -->
+    <br />
+    <div class="input-group">
+      <div class="col-sm-8 col-sm-offset-2">
+        <label for="radio-button">Highest level of education</label>
+      </div>
+      <div class="col-sm-8 col-sm-offset-2">
+        <input type="radio" id="radio-button-1" aria-label="Radio button" value="radio-button-1">
+        High School
+      </div>
+      <div class="col-sm-8 col-sm-offset-2">
+        <input type="radio" id="radio-button-2" aria-label="Radio button" value="radio-button-2">
+        College
+      </div>
+      <div class="col-sm-8 col-sm-offset-2">
+        <input type="radio" id="radio-button-3" aria-label="Radio button" value="radio-button-3" >
+        Grad School
+      </div>
+    </div>
+
+    <!-- CHECKBOXES -->
+    <br />
+    <div class="input-group">
+      <div class="col-sm-8 col-sm-offset-2">
+        <label for="radio-button">Sex</label>
+      </div>
+      <div class="col-sm-8 col-sm-offset-2">
+        <input type="checkbox" id="checkbox-1" aria-label="checkbox" value="checkbox-1">
+        Male
+      </div>
+      <div class="col-sm-8 col-sm-offset-2">
+        <input type="checkbox" id="checkbox-2" aria-label="checkbox" value="checkbox-2">
+        Female
+      </div>
+      <div class="col-sm-8 col-sm-offset-2">
+        <input type="checkbox" id="checkbox-3" aria-label="checkbox" value="checkbox-3">
+        Prefer not to say
+      </div>
+    </div>
+
+    <!-- DROPDOWN -->
+    <br />
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <%= link_to "Autocomplete", autocomplete_path, class: "dropdown-item", id: "autocomplete" %>
+          <%= link_to "Buttons", buttons_path, class: "dropdown-item" %>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIGNATURE FILED -->
+    <br />
+    <div class="col-sm-4 col-sm-offset-2">
+      <label>Full Name to sign</label>
+      <input type="text" class="form-control" id="name" placeholder="Full name">
+    </div>
+
+    <!-- INSERT DATE-->
+    <div class="col-sm-4">
+        <label>Date</label>
+        <input type="text"
+               class="form-control"
+               id="datepicker"
+               data-provide="datepicker"
+               placeholder="mm/dd/yyyy"
+               data-date-autoclose="true"
+               data-date-today-highlight="true" >
+    </div>
+
+    <br />
+    <div class="col-sm-4 col-sm-offset-2">
+      <%= link_to "Submit", thanks_path, class: "btn btn-lg btn-primary", role: "button" %>
+    </div>
+
+</div>
+
+  </div>
+</form>
