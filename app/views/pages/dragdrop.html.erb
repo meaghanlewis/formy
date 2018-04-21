@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <h1 align="center">Drag the image into the box</h1>
-  <form align="center">
+  <br />
+  <h1>Drag the image into the box</h1>
+  <form>
 <style>
 #box {
     width: 215px;
@@ -32,10 +33,12 @@ function drop(ev) {
 <body>
 
 <div class="form-group row">
-  <div id="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-</div>
-<div class="form-group row">
-  <%= image_tag("selenium-logo.png", id: "image", draggable: true, ondragstart: "drag(event)") %>
+  <div class="col-sm-3">
+    <div id="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  </div>
+  <div class="col-sm-3">
+    <%= image_tag("selenium-logo.png", id: "image", draggable: true, ondragstart: "drag(event)") %>
+  </div>
 </div>
   </body>
 </form>
