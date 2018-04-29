@@ -60,18 +60,17 @@
       </div>
     </div>
 
-    <!-- DROPDOWN -->
+    <!-- DROPDOWN/ SELECT -->
     <br />
-    <div class="col-sm-8 col-sm-offset-2">
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown button
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <%= link_to "Autocomplete", autocomplete_path, class: "dropdown-item", id: "autocomplete" %>
-          <%= link_to "Buttons", buttons_path, class: "dropdown-item" %>
-        </div>
-      </div>
+    <div class="col-sm-4 col-sm-offset-2">
+      <label for="sel1">Years of experience:</label>
+        <select class="form-control" id="sel1">
+          <option selected>Select an option</option>
+          <option>0-1</option>
+          <option>2-4</option>
+          <option>5-9</option>
+          <option>10+</option>
+        </select>
     </div>
 
     <!-- SIGNATURE FILED -->
