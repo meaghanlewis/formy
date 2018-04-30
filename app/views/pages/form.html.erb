@@ -6,25 +6,27 @@
 
     <!-- TEXT FIELDS -->
     <div class="col-sm-8 col-sm-offset-2">
-      <label for="first-name">First name</label>
+      <strong><label for="first-name">First name</label></strong>
       <input type="text" class="form-control" id="first-name" placeholder="Enter first name">
     </div>
+    <br />
 
     <div class="col-sm-8 col-sm-offset-2">
-      <label for="last-name">Last name</label>
+      <strong><label for="last-name">Last name</label></strong>
       <input type="text" class="form-control" id="last-name" placeholder="Enter last name">
     </div>
+    <br />
 
     <div class="col-sm-8 col-sm-offset-2">
-      <label for="ssn">SSN</label>
-      <input type="text" class="form-control" id="ssn" placeholder="Enter social security number">
+      <strong><label for="job-title">Job title</label></strong>
+      <input type="text" class="form-control" id="job-title" placeholder="Enter your job title">
     </div>
+    <br />
 
     <!-- RADIO BUTTONS -->
-    <br />
     <div class="input-group">
       <div class="col-sm-8 col-sm-offset-2">
-        <label for="radio-button">Highest level of education</label>
+        <strong><label for="radio-button">Highest level of education</label></strong>
       </div>
       <div class="col-sm-8 col-sm-offset-2">
         <input type="radio" id="radio-button-1" aria-label="Radio button" value="radio-button-1">
@@ -39,12 +41,12 @@
         Grad School
       </div>
     </div>
+    <br />
 
     <!-- CHECKBOXES -->
-    <br />
     <div class="input-group">
       <div class="col-sm-8 col-sm-offset-2">
-        <label for="radio-button">Sex</label>
+        <strong><label for="radio-button">Sex</label></strong>
       </div>
       <div class="col-sm-8 col-sm-offset-2">
         <input type="checkbox" id="checkbox-1" aria-label="checkbox" value="checkbox-1">
@@ -59,11 +61,11 @@
         Prefer not to say
       </div>
     </div>
+    <br />
 
     <!-- DROPDOWN/ SELECT -->
-    <br />
     <div class="col-sm-4 col-sm-offset-2">
-      <label for="sel1">Years of experience:</label>
+      <strong><label for="select-menu">Years of experience:</label></strong>
         <select class="form-control" id="select-menu">
           <option value="0" selected>Select an option</option>
           <option value="1">0-1</option>
@@ -72,17 +74,11 @@
           <option value="4">10+</option>
         </select>
     </div>
-
-    <!-- SIGNATURE FILED -->
     <br />
-    <div class="col-sm-4 col-sm-offset-2">
-      <label>Full Name to sign</label>
-      <input type="text" class="form-control" id="name" placeholder="Full name">
-    </div>
 
     <!-- INSERT DATE-->
     <div class="col-sm-4">
-        <label>Date</label>
+        <strong><label>Date</label></strong>
         <input type="text"
                class="form-control"
                id="datepicker"
@@ -91,7 +87,6 @@
                data-date-autoclose="true"
                data-date-today-highlight="true" >
     </div>
-
     <br />
     <div class="col-sm-4 col-sm-offset-2">
       <%= link_to "Submit", thanks_path, class: "btn btn-lg btn-primary", role: "button" %>
