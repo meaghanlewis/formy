@@ -1,22 +1,24 @@
-<h1 align="center">File upload</h1>
+<br />
+<h1>File upload</h1>
 
-<h3>File Input Example</h3>
-<form method="POST" action="#" enctype="multipart/form-data">
+<form method="POST" action="" enctype="multipart/form-data">
 <!-- COMPONENT START -->
 <div class="form-group">
-<div class="input-group input-file" name="Fichier1">
+<div class="input-group input-file">
   <span class="input-group-btn">
-        <button class="btn btn-secondary btn-choose" type="button">Choose</button>
-    </span>
+    <button class="btn btn-secondary btn-choose" type="button">Choose</button>
+  </span>
+  <div class="col-sm-4">
     <input type="text" class="form-control" placeholder='Choose a file...' />
+  </div>
     <span class="input-group-btn">
          <button class="btn btn-warning btn-reset" type="button">Reset</button>
     </span>
 </div>
 </div>
-<div class="form-group">
+<!-- <div class="form-group">
 		<button type="submit" class="btn btn-primary pull-right">Submit</button>
-</div>
+</div> -->
 <script>
 function bs_input_file() {
 	$(".input-file").before(
