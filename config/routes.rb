@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   get 'checkbox', to: 'pages#checkbox'
   get 'datepicker', to: 'pages#datepicker'
   get 'dragdrop', to: 'pages#dragdrop'
-  get 'dragdrop2', to: 'pages#dragdrop2'
   get 'dropdown', to: 'pages#dropdown'
   get 'enabled', to: 'pages#enabled'
   get 'fileupload', to: 'pages#fileupload'
