@@ -1,4 +1,0 @@
-{
-    "appService.defaultWebAppToDeploy": "/subscriptions/0a3ef974-8373-431a-a436-96fec4656567/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/meaghanformyapp",
-    "appService.deploySubpath": ""
-}
