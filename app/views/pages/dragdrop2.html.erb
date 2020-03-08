@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<style>
+ 
+</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery UI Droppable - Default functionality</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <br />
+    <h1>Drag the image into the box</h1>
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+        font-size: 1em;
+    }
+
+    .ui-draggable, .ui-droppable {
+        background-position: top;
+    }
+
+	#drag { 
+        width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; 
+    }
+	#drop { 
+        width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; 
+    }
+	</style>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	$( function() {
+		$( "#drag" ).draggable();
+		$( "#drop" ).droppable({
+			drop: function( event, ui ) {
+				$( this )
+					.addClass( "ui-state-highlight" )
+					.find( "p" )
+						.html( "Dropped!" );
+			}
+		});
+	} );
+	</script>
+</head>
+<body>
+
+<div id="drag" class="ui-widget-content">
+	<p>Drag me</p>
+</div>
+
+<div id="drop" class="ui-widget-header">
+	<p>Drop here</p>
+</div>
+
+
+</body>
+</html>
