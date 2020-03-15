@@ -23,19 +23,19 @@
         background-position: top;
     }
 
-	#drag {
-        width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0;
+	#image {
+        width: 200px; height: 200px; padding: 0.5em; float: left; margin: 10px 10px 10px 0;
     }
-	#drop {
-        width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px;
+	#box {
+        width: 300px; height: 300px; padding: 0.5em; float: left; margin: 10px;
     }
 	</style>
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script>
 	$( function() {
-		$( "#drag" ).draggable();
-		$( "#drop" ).droppable({
+		$( "#image" ).draggable();
+		$( "#box" ).droppable({
 			drop: function( event, ui ) {
 				$( this )
 					.addClass( "ui-state-highlight" )
@@ -48,11 +48,11 @@
 </head>
 <body>
 
-<div id="drag" class="ui-widget-content">
-	<p>Drag me</p>
+<div id="image" class="ui-widget-content">
+	<%= image_tag("selenium-logo.png") %>
 </div>
 
-<div id="drop" class="ui-widget-header">
+<div id="box" class="ui-widget-header">
 	<p>Drop here</p>
 </div>
 
