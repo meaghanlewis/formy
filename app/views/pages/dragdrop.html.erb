@@ -1,45 +1,61 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <br />
-  <h1>Drag the image into the box</h1>
-  <form>
+<!doctype html>
+<html lang="en">
 <style>
-#box {
-    width: 215px;
-    height: 215px;
-    padding: 10px;
-    border: 5px solid #aaaaaa;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 </style>
-<script>
-function allowDrop(ev) {
-    ev.preventDefault();
-}
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery UI Droppable - Default functionality</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <br />
+    <h1>Drag the image into the box</h1>
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-}
+    table {
+        font-size: 1em;
+    }
 
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-}
-</script>
+    .ui-draggable, .ui-droppable {
+        background-position: top;
+    }
+
+	#image {
+        width: 200px; height: 200px; padding: 0.5em; float: left; margin: 10px 10px 10px 0;
+    }
+	#box {
+        width: 300px; height: 300px; padding: 0.5em; float: left; margin: 10px;
+    }
+	</style>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	$( function() {
+		$( "#image" ).draggable();
+		$( "#box" ).droppable({
+			drop: function( event, ui ) {
+				$( this )
+					.addClass( "ui-state-highlight" )
+					.find( "p" )
+						.html( "Dropped!" );
+			}
+		});
+	} );
+	</script>
 </head>
 <body>
 
-<div class="form-group row">
-  <div class="col-sm-3">
-    <div id="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-  </div>
-  <div class="col-sm-3">
-    <%= image_tag("selenium-logo.png", id: "image", draggable: true, ondragstart: "drag(event)") %>
-  </div>
+<div id="image" class="ui-widget-content">
+	<%= image_tag("selenium-logo.png") %>
 </div>
-  </body>
-</form>
+
+<div id="box" class="ui-widget-header">
+	<p>Drop here</p>
+</div>
+
+
+</body>
 </html>
