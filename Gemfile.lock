@@ -115,7 +115,7 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (~> 0.3.0)
-    pg (1.2.2)
+    pg (0.21.0)
     popper_js (1.16.0)
     public_suffix (3.0.1)
     puma (4.3.3)
@@ -227,7 +227,7 @@ DEPENDENCIES
   jquery-rails (~> 4.3, >= 4.3.1)
   listen (>= 3.0.5, < 3.2)
   paperclip (~> 5.2.0)
-  pg
+  pg (~> 0.21)
   puma (~> 4.3, >= 4.3.3)
   rails (~> 5.1.2)
   rails-controller-testing
