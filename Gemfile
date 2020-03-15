@@ -9,7 +9,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
 # Use postgres
-gem 'pg', '~> 1.2', '>= 1.2.2'
+#gem 'pg', '~> 1.2', '>= 1.2.2'
 # Use Puma as the app server
 gem 'puma', '~> 4.3', '>= 4.3.3'
 # Use SCSS for stylesheets
@@ -41,6 +41,10 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem "paperclip", "~> 5.2.0"
 
 gem 'bootstrap-datepicker-rails'
+
+group :production do
+  gem 'pg'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
