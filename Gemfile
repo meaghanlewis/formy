@@ -10,7 +10,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 7.0', '>= 7.0.4'
 # Use postgres
-#gem 'pg', '~> 1.2', '>= 1.2.2'
+gem 'pg', '~> 1.4', '>= 1.4.5'
 # Use Puma as the app server
 gem 'puma', '~> 6.0', '>= 6.0.2'
 # Use SCSS for stylesheets
@@ -43,10 +43,6 @@ gem 'paperclip', '~> 6.1'
 
 gem 'bootstrap-datepicker-rails', '~> 1.9', '>= 1.9.0.1'
 
-group :production do
-  gem 'pg', '~> 1.4', '>= 1.4.5'
-end
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -63,8 +59,6 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
