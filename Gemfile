@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.6.8"
+ruby "3.2.0"
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -8,20 +8,20 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.2'
+gem 'rails', '~> 7.0', '>= 7.0.4'
 # Use postgres
 #gem 'pg', '~> 1.2', '>= 1.2.2'
 # Use Puma as the app server
-gem 'puma', '~> 4.3'
+gem 'puma', '~> 6.0', '>= 6.0.2'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 5.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -39,12 +39,12 @@ gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
-gem "paperclip", "~> 5.2.0"
+gem 'paperclip', '~> 6.1'
 
-gem 'bootstrap-datepicker-rails'
+gem 'bootstrap-datepicker-rails', '~> 1.9', '>= 1.9.0.1'
 
 group :production do
-  gem 'pg', '~> 0.21'
+  gem 'pg', '~> 1.4', '>= 1.4.5'
 end
 
 group :development, :test do
@@ -58,8 +58,8 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
-  gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'web-console', '~> 4.2'
+  gem 'listen', '~> 3.8'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
