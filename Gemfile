@@ -43,6 +43,8 @@ gem 'paperclip', '~> 6.1'
 
 gem 'bootstrap-datepicker-rails', '~> 1.9', '>= 1.9.0.1'
 
+gem 'sqlite3'
+
 group :production do
   gem 'pg', '~> 1.4', '>= 1.4.5'
 end
