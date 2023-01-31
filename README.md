@@ -1,6 +1,6 @@
 # FORMY
 
-Application with form components that can be used for testing purposes
+Application with form components that can be used for testing purposes. It's hosted at: https://formy-project.herokuapp.com/.
 
 ## Run the application locally
 
